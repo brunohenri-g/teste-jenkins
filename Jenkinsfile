@@ -20,7 +20,7 @@
 //     }
 // }
 pipeline {
-    agent { label 'dockerserver' } // if you don't have other steps, 'any' agent works
+    agent any
     stages {
         stage('Back-end') {
             agent {
