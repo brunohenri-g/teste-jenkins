@@ -8,13 +8,7 @@ pipeline {
         TAG = 'latest' // Tag da imagem
     }
     
-    stages {
-        stage('Checkout') {
-            steps {
-                git url: env.GIT_REPO
-            }
-        }
-        
+    stages {      
         stage('Build Docker Image') {
             steps {
                 script {
