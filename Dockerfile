@@ -4,6 +4,9 @@ FROM python:3.9-slim
 # Definir o diretório de trabalho dentro do container
 WORKDIR /app
 
+
+ARG TESTE
+ENV TESTE=$TESTE
 # Copiar o arquivo Python da máquina local para o diretório de trabalho no container
 COPY hello.py .
 
