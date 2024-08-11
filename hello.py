@@ -1,6 +1,5 @@
-import os
-
-for key, value in os.environ.items():
-    print(f"{key}={value}")
-
-print("Mudança")
+# Abre o arquivo em modo de leitura
+with open("worker.app/appsettings.json", 'r') as arquivo:
+    # Lê e imprime cada linha do arquivo
+    for linha in arquivo:
+        print(linha, end='\n')
